@@ -1,6 +1,6 @@
 {
   "name": "amityeko-messenger-action",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple github action to send a message to AmityEko's app",
   "main": "index.js",
   "scripts": {
