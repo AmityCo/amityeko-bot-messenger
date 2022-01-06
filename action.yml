@@ -1,0 +1,37 @@
+name: AmityEko Messenger Action
+description: Send a message to the AmityEko
+
+inputs:
+  serverUrl:
+    description: The server's url
+    default: https://ekogreen-h1.ekoapp.com/bot/v2/message/push
+    required: false
+
+  accessToken:
+    description: The bot's session token
+    required: true
+
+  groupId:
+    description: The group ID to send in
+    required: true
+
+  threadId:
+    description: The thread ID to send in
+    required: true
+
+  type:
+    description: Either "text", "image"
+    default: text
+    required: false
+
+  content:
+    description: The data to send.
+    required: true
+
+runs:
+  using: node12
+  main: dist/index.js
+
+branding:
+  icon: message-square
+  color: green

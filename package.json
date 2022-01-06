@@ -1,0 +1,39 @@
+{
+  "name": "amityeko-messenger-action",
+  "version": "0.0.1",
+  "description": "A simple github action to send a message to AmityEko's app",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js",
+    "changelog": "auto-changelog --config ./.autochangelog/config.json && git add CHANGELOG.md",
+    "version": "npm run build && git add dist/ && npm run changelog",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmityCo/amityeko-messenger-action.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "amity",
+    "eko",
+    "amityeko",
+    "ekoapp"
+  ],
+  "author": "Julien Barbay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmityCo/amityeko-messenger-action/issues"
+  },
+  "homepage": "https://github.com/AmityCo/amityeko-messenger-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.3.0",
+    "esbuild": "^0.13.8"
+  }
+}
