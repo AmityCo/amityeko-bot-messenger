@@ -49,7 +49,7 @@ You can also send an image (even a gif) with:
 
 ### NPM package
 
-1. `npm i -D @amityeko/amityeko-bot-messenger`
+1. `npm i -D @amityco/amityeko-bot-messenger`
 2. `import sendMessage from '@amityco/amityeko-bot-messenger'`
 
 The signature function is:
@@ -67,7 +67,7 @@ function(
 
 ### Command line usage
 
-1. `npm i -g @amityeko/amityeko-bot-messenger`
+1. `npm i -g @amityco/amityeko-bot-messenger`
 2. `aem text "hello world"` or `aem image https://cataas.com/cat/gif`
 #### Configuration
 
