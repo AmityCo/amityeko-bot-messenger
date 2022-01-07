@@ -1,5 +1,14 @@
 # Changelog
 
+## [v2.0.2](https://github.com/AmityCo/amityeko-bot-messenger/compare/v2.0.1...v2.0.2)
+#### 7 January 2022
+
+### Fixes
+
+- bin dependencies should not be dev deps ([`4c503da`](https://github.com/AmityCo/amityeko-bot-messenger/commit/4c503da4511b1ce3f81d48ae31e3df72af934aef)) (by Julien Barbay)
+- correcting import names ([`8698838`](https://github.com/AmityCo/amityeko-bot-messenger/commit/869883828c879fbc83d52a3a13a4a70bdeeadb7e)) (by Julien Barbay)
+
+---
 ## [v2.0.1](https://github.com/AmityCo/amityeko-bot-messenger/compare/v2.0.0...v2.0.1)
 #### 7 January 2022
 
