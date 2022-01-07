@@ -1,5 +1,9 @@
 # Changelog
 
+## [v2.0.1](https://github.com/AmityCo/amityeko-bot-messenger/compare/v2.0.0...v2.0.1)
+#### 7 January 2022
+
+---
 ## [v2.0.0](https://github.com/AmityCo/amityeko-bot-messenger/compare/v1.0.0...v2.0.0)
 #### 7 January 2022
 
