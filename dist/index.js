@@ -9100,7 +9100,7 @@ var require_lib3 = __commonJS({
     module2.exports = async function run2(serverEndpoint, accessToken, groupId, threadId, messageType, messageContent) {
       if (!(messageType in messageFormatters))
         throw new Error(`Invalid messageType: ${messageType}`);
-      await axios.post(serverEndpoint, {
+      await axios.post(`${serverEndpoint}/bot/v2/message/push`, {
         gid: groupId,
         tid: threadId,
         messages: [messageFormatters[messageType](messageContent)]
@@ -9113,7 +9113,7 @@ var require_lib3 = __commonJS({
 var core = require_core();
 var github = require_github();
 var run = require_lib3();
-run(core.getInput("serverUrl"), core.getInput("accessToken"), core.getInput("groupId"), core.getInput("threadId"), core.getInput("type"), core.getInput("content")).catch((err) => core.setFailed(err.message));
+run(core.getInput("serverEndpoint"), core.getInput("accessToken"), core.getInput("groupId"), core.getInput("threadId"), core.getInput("type"), core.getInput("content")).catch((err) => core.setFailed(err.message));
 /*!
  * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
  *

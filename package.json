@@ -1,6 +1,6 @@
 {
   "name": "@amityco/amityeko-bot-messenger",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple github action to send a message to AmityEko's app",
   "main": "lib/index.js",
   "bin": {
