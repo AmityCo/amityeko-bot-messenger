@@ -4,7 +4,7 @@ const github = require('@actions/github')
 const run = require('./lib/index')
 
 run(
-  core.getInput('serverUrl'),
+  core.getInput('serverEndpoint'),
   core.getInput('accessToken'),
   core.getInput('groupId'),
   core.getInput('threadId'),

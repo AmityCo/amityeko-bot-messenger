@@ -2,9 +2,9 @@ name: AmityEko Messenger Action
 description: Send a message to the AmityEko
 
 inputs:
-  serverUrl:
-    description: The server's url
-    default: https://ekogreen-h1.ekoapp.com/bot/v2/message/push
+  serverEndpoint:
+    description: The server's endpoint
+    default: https://ekogreen-h1.ekoapp.com
     required: false
 
   accessToken:
