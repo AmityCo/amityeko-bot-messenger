@@ -1,17 +1,20 @@
 {
-  "name": "amityeko-messenger-action",
+  "name": "@amityco/amityeko-bot-messenger",
   "version": "1.0.0",
   "description": "A simple github action to send a message to AmityEko's app",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "aem": "bin/index.js"
+  },
   "scripts": {
-    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js",
+    "build": "esbuild action.js --bundle --platform=node --outfile=dist/index.js",
     "changelog": "auto-changelog --config ./.autochangelog/config.json && git add CHANGELOG.md",
     "version": "npm run build && git add dist/ && npm run changelog",
     "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmityCo/amityeko-messenger-action.git"
+    "url": "git+https://github.com/AmityCo/amityeko-bot-messenger.git"
   },
   "keywords": [
     "github",
@@ -24,9 +27,9 @@
   "author": "Julien Barbay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AmityCo/amityeko-messenger-action/issues"
+    "url": "https://github.com/AmityCo/amityeko-bot-messenger/issues"
   },
-  "homepage": "https://github.com/AmityCo/amityeko-messenger-action#readme",
+  "homepage": "https://github.com/AmityCo/amityeko-bot-messenger#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
@@ -34,6 +37,8 @@
   },
   "devDependencies": {
     "auto-changelog": "^2.3.0",
-    "esbuild": "^0.13.8"
+    "esbuild": "^0.13.8",
+    "rc-config-loader": "^4.0.0",
+    "yargs": "^17.3.1"
   }
 }
