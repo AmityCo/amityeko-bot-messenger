@@ -1,5 +1,17 @@
 # Changelog
 
+## [v2.1.0](https://github.com/AmityCo/amityeko-bot-messenger/compare/v2.0.2...v2.1.0)
+#### 23 February 2022
+
+### New Features
+
+- adding type support ([`ad914f7`](https://github.com/AmityCo/amityeko-bot-messenger/commit/ad914f71a8b2a54385e03746136ed191026e58e6)) (by Julien Barbay)
+
+### Fixes
+
+- lockfile upgrade ([`2d94d3a`](https://github.com/AmityCo/amityeko-bot-messenger/commit/2d94d3a299cb8fd71e9dbeb2a65b590fa75679d3)) (by Julien Barbay)
+
+---
 ## [v2.0.2](https://github.com/AmityCo/amityeko-bot-messenger/compare/v2.0.1...v2.0.2)
 #### 7 January 2022
 
