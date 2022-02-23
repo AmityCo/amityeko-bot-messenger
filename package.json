@@ -3,6 +3,7 @@
   "version": "2.0.2",
   "description": "A simple github action to send a message to AmityEko's app",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "bin": {
     "aem": "bin/index.js"
   },
